@@ -59,7 +59,7 @@ def cli():
             draw = ImageDraw.Draw(im)
             bb = annotation['bbox']
             draw.rectangle(((bb[0], bb[1]), (bb[0] + bb[2], bb[1] + bb[3])), fill=None, outline="red")
-            draw.text((bb[0] + 2, bb[1] + 2), get_category(annotation["category_id"]), font=font)
+            draw.text((bb[0] + 2, bb[1] + 2), str(get_category(annotation["category_id"])), font=font)
             if isinstance(annotation["segmentation"], dict):
                 im.putalpha(255)
                 rle_seg = annotation["segmentation"]
