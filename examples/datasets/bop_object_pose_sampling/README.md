@@ -15,6 +15,12 @@ Execute in the BlenderProc main directory:
 ```
 blenderproc run examples/datasets/bop_object_pose_sampling/main.py <path_to_bop_data> <bop_dataset_name> <path_to_bop_toolkit> examples/datasets/bop_object_pose_sampling/output
 ```
+
+**Note**: to run without installation, use directly python interpreter:
+```
+python run.py examples/datasets/bop_object_pose_sampling/main.py <path_to_bop_data> <bop_dataset_name> <path_to_bop_toolkit> examples/datasets/bop_object_pose_sampling/output
+```
+
 * `examples/datasets/bop_object_pose_sampling/main.py`: path to the python file with pipeline configuration.
 * `<path_to_bop_data>`: path to a folder containing BOP datasets.
 * `<bop_dataset_name>`: name of BOP dataset, e.g. lm

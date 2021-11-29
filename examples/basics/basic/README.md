@@ -15,6 +15,11 @@ Execute in the BlenderProc main directory, if this is the first time BlenderProc
 blenderproc run examples/basics/basic/main.py examples/resources/camera_positions examples/resources/scene.obj examples/basics/basic/output
 ```
 
+**Note**: to run without installation, use directly python interpreter:
+```
+python run.py examples/basics/basic/main.py examples/resources/camera_positions examples/resources/scene.obj examples/basics/basic/output
+```
+
 * `examples/basics/basic/main.py`: path to the python file with pipeline configuration.
 
 The three arguments afterwards are used by the `argparser` at the top of the `main.py` file:
